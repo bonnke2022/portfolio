@@ -72,7 +72,7 @@
   --tracking-tighter: var(--tracking-tighter);
 
   --font-playfair: var(--font-playfair);
-  --font-inter: var(--font-inter);
+  --font-work-sans: var(--font-work-sans);
 
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
@@ -214,7 +214,7 @@
     @apply box-border select-none border-border outline-ring/50;
   }
   body {
-    @apply bg-navy text-soft-white min-h-dvh overflow-x-hidden text-lg px-8 pb-10;
+    @apply bg-navy text-soft-white min-h-dvh overflow-x-hidden text-lg px-8 pb-10 font-work-sans;
   }
   body,
   h1,
@@ -231,9 +231,8 @@
   h2,
   h3,
   h4,
-  h5,
-  p {
-    @apply font-normal;
+  h5 {
+    @apply font-playfair;
   }
   @media (prefers-reduced-motion: reduce) {
     *,
@@ -291,9 +290,6 @@
   }
   main {
     @apply w-full;
-  }
-  section {
-    @apply min-h-dvh;
   }
 }
 @layer components {

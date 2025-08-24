@@ -5,7 +5,6 @@ import {
   NavItems,
   MobileNav,
   NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
@@ -28,7 +27,7 @@ function NavbarDemo() {
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "/contact",
     },
   ];
 
