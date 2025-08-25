@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section id="about" className="max-w-5xl mx-auto mb-32 space-y-20 py-10">
       {/* Left side - text */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center md:items-start">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ const About = () => {
 
         {/* Right side - image */}
         <motion.div
-          className="flex flex-col justify-center gap-8"
+          className="flex flex-col justify-center items-center gap-8"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
