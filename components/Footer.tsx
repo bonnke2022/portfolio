@@ -49,7 +49,7 @@ const Footer = () => {
             className="flex items-center gap-1 px-3 py-2 rounded-md bg-gray-700 hover:bg-gray-600 transition-colors whitespace-nowrap"
           >
             <ArrowUp size={16} />
-            Back to Top
+            <span className="whitespace-nowrap">Back to Top</span>
           </button>
         </div>
       </div>
