@@ -92,7 +92,7 @@ type projectProps = {
 
 export const projects: projectProps[] = [
   {
-    id: 1,
+    id: 0,
     title: "Jobify",
     image: "/undraw_artificial-intelligence_43qa.svg",
     description:
@@ -103,7 +103,7 @@ export const projects: projectProps[] = [
     github: "https://github.com/bonnke2022/job-app",
   },
   {
-    id: 2,
+    id: 1,
     title: "Luxe By Deba",
     image: "/fine-blonde.jpg",
     description:
@@ -114,7 +114,7 @@ export const projects: projectProps[] = [
     github: "https://github.com/bonnke2022/luxe-app",
   },
   {
-    id: 3,
+    id: 2,
     title: "Space Tourism",
     image: "/image-space-capsule-portrait.jpg",
     description:

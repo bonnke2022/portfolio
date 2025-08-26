@@ -8,6 +8,12 @@ import { use } from "react";
 const ProjectPage = ({ params }: { params: Promise<{ id: number }> }) => {
   const { id } = use(params);
 
+  if (!projects[id])
+    return (
+      <main className="min-h-dvh mx-auto">
+        <h2>No projects found</h2>
+      </main>
+    );
   return (
     <main className="max-w-6xl mx-auto py-16 px-4 text-gray-200">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -72,7 +78,7 @@ const ProjectPage = ({ params }: { params: Promise<{ id: number }> }) => {
             unoptimized
             priority={false}
             loading="lazy"
-            className="rounded-2xl shadow-lg shadow-indigo-900/30 w-full h-auto object-contain"
+            className="rounded-2xl shadow-lg shadow-indigo-900/30 w-full h-[400px] object-contain"
           />
         </motion.div>
       </div>
