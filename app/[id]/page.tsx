@@ -52,13 +52,23 @@ const ProjectPage = ({ params }: { params: Promise<{ id: number }> }) => {
             <button className="relative inline-flex h-12 overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-[#000319] transform hover:-translate-y-1 transition duration-300">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
               <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-[#0D0E2E] px-4 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                <Link href={`${projects[id].link}`}>View Live</Link>
+                <Link
+                  href={`${projects[id].link}`}
+                  className="whitespace-nowrap"
+                >
+                  View Live
+                </Link>
               </span>
             </button>
 
             {/* GitHub Button */}
             <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#E2CBFF,45%,#94a3b8,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-gray-900 hover:text-navy transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-[#000319] transform hover:-translate-y-1 duration-300">
-              <Link href={`${projects[id].github}`}>See Code on GitHub</Link>
+              <Link
+                href={`${projects[id].github}`}
+                className="whitespace-nowrap"
+              >
+                See Code on GitHub
+              </Link>
             </button>
           </motion.div>
         </motion.div>
