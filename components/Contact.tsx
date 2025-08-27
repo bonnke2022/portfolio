@@ -106,14 +106,14 @@ const Contact = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="mailto:youremail@example.com"
+                href="mailto:bonnkeomorehiomwan@gmail.com"
                 aria-label="Email"
                 className="hover:text-gray-400"
               >
                 <CiMail size={28} />
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/bonnke2022"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -122,7 +122,7 @@ const Contact = () => {
                 <FaGithub size={28} />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/bonnke-omorehiomwan-3694b1263"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
